@@ -10,15 +10,12 @@ const BookContextProvider = (props) => {
         {title : ' Rich Dad Poor Dad',id : 3},
         {title: ' How to win friends and influence people',id : 4},
     ])
-    return (<div> <form>
-        <input type="text">
-
-        </input>
-    </form>
+    return (
+   
         <BookContext.Provider value={ {books} }>
         {props.children}
         </BookContext.Provider>
-        </div>
+        
     );
 }
  
